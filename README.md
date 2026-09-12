@@ -2,14 +2,14 @@
 
 
 Ascend is an AI-powered, profile-first platform designed to help students discover opportunities that genuinely match their skills, interests, education, and career aspirations.
-Regardless of their course, college, location, or academic background, students can create a single profile showcasing their skills, projects, certifications, achievements, and interests. The platform then uses Google Gemini AI to analyse the student’s profile against relevant opportunities and generate a personalized fit score, along with clear reasons explaining why each opportunity is suitable.
+Regardless of their course, college, location, or academic background, students can create a single profile showcasing all of their skills, projects, certifications, achievements, and interests. We have integrated Google Gemini's API to analyse the student’s profile against relevant opportunities and generate a personalized fit score on a scale of 1-10, along with clear reasons explaining why each opportunity is suitable.
 Instead of students having to search across dozens of websites, track multiple deadlines, and manually determine whether they are eligible, the platform brings the right opportunities directly to them.
 In simple terms:
 Build your profile once → Let AI understand your strengths → Discover opportunities that fit you.
 This transforms opportunity discovery from a search-first experience into a profile-first experience.
 Key Features
 •	Simple Student Portfolio - Students can create a profile highlighting their skills, projects, certifications, achievements, interests, and educational background. The platform is designed for all students—not just those from technical or computer science backgrounds.
-•	AI-Powered Opportunity Matching - Using the Google Gemini AI API, the platform compares a student’s profile with available opportunities and generates a personalized fit score, supported by an explanation of why the opportunity matches their profile.
+•	AI-Powered Opportunity Matching - Using the Google Gemini's API, the platform compares a student’s profile with available opportunities and generates a personalized fit score, supported by an explanation of why the opportunity matches their profile.
 •	Personalized Opportunity Feed - Internships, hackathons, competitions, scholarships, projects, and other relevant opportunities are presented in a personalized feed and ranked according to the student’s suitability.
 •	Simple On-boarding - Students can get started without a complicated registration or profile-building process.
 •	Verified Student Badge - Students who verify their identity through a valid college email or student ID can receive a “Verified” badge, improving authenticity and trust within the platform.
@@ -51,7 +51,7 @@ One-line Vision
 
 
 **Main thing to note - **
-The code in github is copied locally and then uploaded to github, thus it would only host the frontend part of the website. The backend and overall functioning of the website would be hosted through base44 itself
+The code in github is copied locally and then uploaded to github, thus it would only host the frontend part of the website. The backend and overall functioning of the website would be hosted through base44 itself.
 
 
 
