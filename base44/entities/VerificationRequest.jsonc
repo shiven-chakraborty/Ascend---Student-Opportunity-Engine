@@ -1,0 +1,39 @@
+{
+  "name": "VerificationRequest",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "title": "College email being verified"
+    },
+    "otp": {
+      "type": "string"
+    },
+    "expires": {
+      "type": "number",
+      "title": "Expiry epoch ms"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "email",
+    "otp"
+  ],
+  "rls": {
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

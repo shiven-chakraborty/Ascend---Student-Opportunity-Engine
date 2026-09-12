@@ -1,0 +1,43 @@
+{
+  "name": "Skill",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Skill name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Technical",
+        "Design",
+        "Soft",
+        "Other"
+      ],
+      "default": "Technical"
+    },
+    "level": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 70
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "rls": {
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

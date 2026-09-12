@@ -1,0 +1,79 @@
+{
+  "name": "Opportunity",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "company": {
+      "type": "string",
+      "title": "Company"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "url": {
+      "type": "string",
+      "title": "URL"
+    },
+    "salary": {
+      "type": "number",
+      "title": "Salary"
+    },
+    "match_score": {
+      "type": "number",
+      "title": "Match score"
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason"
+    },
+    "matched_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "title": "Matched skills"
+    },
+    "missing_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "title": "Missing skills"
+    },
+    "recommendation": {
+      "type": "string",
+      "title": "Recommendation"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": null,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

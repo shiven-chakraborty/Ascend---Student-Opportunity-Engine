@@ -1,0 +1,54 @@
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Achievement title"
+    },
+    "description": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string",
+      "title": "Issuing organization"
+    },
+    "date": {
+      "type": "string",
+      "title": "Date or year"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Achievement",
+        "Certification"
+      ],
+      "default": "Achievement"
+    },
+    "proofLink": {
+      "type": "string",
+      "title": "Certificate / proof link"
+    },
+    "logo": {
+      "type": "string",
+      "title": "Emoji or image URL"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "rls": {
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}
